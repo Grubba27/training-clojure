@@ -47,6 +47,7 @@
       (>= final-items-value max-price-limit) free-tax
       )))
 
-
+;; Get unique type of clojure [] are also diferent  atoms
+(type (/ 10 3))
 
 (defn -main [] (println (salary-imposts 1900)))
