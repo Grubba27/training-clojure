@@ -1,4 +1,5 @@
 (ns hello.core)
+
 ;; primeira função com let
 (defn valor-conta
   "Define o valor total da conta com os 10% do atendente"
@@ -44,8 +45,7 @@
       (<= final-items-value 0) "err"
       (<= final-items-value min-price-limit) max-tax
       (and (> final-items-value min-price-limit) (< final-items-value max-price-limit)) mid-tax
-      (>= final-items-value max-price-limit) free-tax
-      )))
+      (>= final-items-value max-price-limit) free-tax)))
 
 ;; Get unique type of clojure [] are also diferent  atoms
 (type (/ 10 3))
