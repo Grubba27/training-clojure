@@ -7,8 +7,7 @@
 (deftest blocked-in-source-tax-min-test
   (testing "Given an input lower than 1000 it should return 0"
     (is (= 0 (blocked-in-source-tax 999)))
-    (is (= 0 (blocked-in-source-tax 1)))
-    ))
+    (is (= 0 (blocked-in-source-tax 1)))))
 
 (deftest blocked-in-source-tax-max-test
   (testing "Given an input bigger than 1000 it should return 10%"
