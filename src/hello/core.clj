@@ -32,3 +32,15 @@
 
 ;; Get unique type of clojure [] are also diferent  atoms
 (type (/ 10 3))
+;; Descoverying macros
+(defmacro my-first-macro
+  "My first macro for just testing sum of numbers in array"
+  [item]
+  (reduce + item))
+
+(defn get-value-of-json-string
+  "given and json and the name of property it returns its value"
+  [json property]
+  (if (= (json 0) (json (+ 1 (.indexOf json property))))
+    nil
+    (json (+ 1 (.indexOf json property)))))
