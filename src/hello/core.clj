@@ -1,4 +1,4 @@
-(ns hello.core)
+(ns hello.core (:require [hello.tax.logic :refer :all]))
 
 ;; primeira função com let
 (defn valor-conta
