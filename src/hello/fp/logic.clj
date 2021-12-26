@@ -29,4 +29,6 @@
         (* salary mid-imposts)
         (* salary high-imposts)))))
 
+
+(println "as")
 (salary-imposts 4000 (big-hard-fn-price "CEO") other-big-hard-fn-price)

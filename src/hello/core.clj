@@ -38,6 +38,11 @@
   [item]
   (reduce + item))
 
+(defn somar
+  "Recebe dois valores como parametro e retorna o resultado da soma"
+  [a b]
+  (+ a b))
+
 (defn get-value-of-json-string
   "given and json and the name of property it returns its value"
   [json property]
