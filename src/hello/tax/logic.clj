@@ -11,3 +11,4 @@
       (<= money 0) "err"
       (< money max-money-value) 0
       (>= money max-money-value) (* money retained-percentage))))
+

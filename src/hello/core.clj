@@ -49,3 +49,16 @@
   (if (= (json 0) (json (+ 1 (.indexOf json property))))
     nil
     (json (+ 1 (.indexOf json property)))))
+
+
+
+;; resolver função que faz o quadrado dos primeiros 30 numeros inteiros
+(defn create-n-list
+  "creates a n list"
+  [numbers]
+  (take (+ numbers 1) (range)))
+
+(defn first-n-multiples "recebe n numeros e retorna uma lista com seus multiplos"
+  [numbers]
+  (map * (create-n-list numbers) (create-n-list numbers)))
+
